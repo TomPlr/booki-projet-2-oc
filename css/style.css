@@ -1204,8 +1204,8 @@ main {
   }
 
   .card-landscape__text {
-    width: 90%;
-    margin-left: 23px;
+    width: 50%;
+    margin-left: 5%;
   }
 
   .accomodations-mobile-bg {
