@@ -1108,6 +1108,7 @@ main {
   .searchbar {
     position: relative;
     width: 100%;
+    justify-content: flex-start;
   }
 
   .searchbar:after {
@@ -1115,13 +1116,23 @@ main {
     content: '\f002';
     font-family: FontAwesome;
     top: 15px;
-    right: 17px;
+    right: 16px;
     color: white;
     font-size: 18px;
   }
 
+  .searchbar__icon {
+    width: 50px;
+  }
+
+  .searchbar__field {
+    width: 80%;
+  }
+
   .searchbar__submit {
-    width: 70px;
+    position: absolute;
+    right: 0px;
+    width: 53px;
     border-radius: 15px;
     font-size: 0;
   }
