@@ -362,40 +362,50 @@ template {
 
 /********************************* HEADER **************************************/
 body {
-  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  margin: auto;
   max-width: 1440px;
+  padding: 0 15px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 35px 0 35px;
+  padding-top: 29px;
 }
 
 .header__logo {
-  background: url('../images/logo/Booki.png') center/cover;
-  height: 40px;
-  width: 104px;
-  margin: 26px 0px 0px 31px;
+  height: 50px;
+  width: 120px;
 }
 
 .nav {
-  width: 331px;
-  padding: 14px 18px 0 0;
+  width: 260px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-list {
   display: flex;
+  align-content: center;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
+  margin: auto 0;
+  width: 100%;
+}
+.nav-list__item {
+  width: 44%;
+  text-align: end;
 }
 
 .nav-link {
   position: relative;
   text-decoration: none;
   color: black;
-  padding: 0 22px;
 }
 
 .nav-link:hover {
@@ -405,24 +415,18 @@ body {
 .nav-link:hover:before {
   content: '';
   position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
+  top: -47px;
+  left: -30%;
+  width: 150%;
   height: 2px;
   background: #0065fc;
-}
-
-/********************************* MAIN **************************************/
-
-main {
-  padding: 0 35px;
 }
 
 /*************************** RESEARCH SECTION ********************************/
 
 /*HEADING*/
 .section-research {
-  margin: 41px 1px 1px 22px;
+  margin-top: 30px;
 }
 
 .section-research__heading {
@@ -490,7 +494,7 @@ main {
 .filter {
   display: flex;
   align-items: center;
-  margin: 14px 0 0 0;
+  margin: 30px 0;
 }
 
 .filter__list {
@@ -498,8 +502,8 @@ main {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  padding-left: 34px;
-  margin-bottom: 0;
+  padding: 0px;
+  margin: 0 0 0 34px;
 }
 
 .filter__title {
@@ -516,9 +520,7 @@ main {
   border: 2px solid rgba(128, 128, 128, 0.29);
   border-left: none;
   border-radius: 40px;
-  height: 46px;
-  width: fit-content;
-  margin: 0 30px 15px 0;
+  margin-right: 30px;
 }
 
 .list-item:hover {
@@ -542,7 +544,7 @@ main {
   border-radius: 100px;
   color: #0065fc;
   height: 50px;
-  width: 47px;
+  width: 50px;
   font-size: 18px;
 }
 
@@ -559,7 +561,6 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 447px;
-  margin: 20px 0;
   word-spacing: 1px;
 }
 
@@ -591,14 +592,12 @@ main {
 
 .section-title {
   font-weight: 700;
-  margin: 0;
 }
 
 .accomodations-background {
   background: #f2f2f2;
   border-radius: 20px;
-  padding: 35px 25px;
-  margin-left: 15px;
+  padding: 35px 40px 0;
 }
 
 /*LEFT-PART*/
@@ -606,24 +605,23 @@ main {
 .left-part {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 61%;
 }
 
 .left-part__cards {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .left-part__title {
-  padding-bottom: 5px;
   font-size: 22px;
-  margin: 7px 0 0 17px;
+  margin: 12px 0 26px 0px;
 }
 
 .left-part__more {
-  margin: 25px 0 0 18px;
+  margin: 8px 0 0 2px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -633,16 +631,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 191px;
-  width: 234px;
-  margin: 17px 11px 13px 19px;
+  width: 31%;
 }
 
 .card-portrait__img {
   height: 115px;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
   object-fit: cover;
+  padding: 5px;
 }
 
 .card-portrait__text {
@@ -654,11 +650,11 @@ main {
 
 .card {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-  padding: 5px;
   text-decoration: none;
   color: black;
   border-radius: 20px;
   background: white;
+  margin-bottom: 34px;
 }
 
 .card:hover {
@@ -669,6 +665,7 @@ main {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
+  word-break: break-word;
 }
 
 .card__txt {
@@ -690,55 +687,50 @@ main {
 .right-part {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  width: 27.5%;
+  width: 24%;
+  flex-wrap: wrap;
 }
 
 .right-part__cards {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 90%;
 }
 
 .right-part__title {
   position: relative;
-  margin: 6px 29px 0 13px;
+  margin: 12px 0 26px 0px;
   font-size: 22px;
+  width: 100%;
 }
 
 .right-part__title::after {
   content: '\f005';
   font-family: FontAwesome;
   position: absolute;
-  right: -14px;
+  right: 0px;
 }
 
 .card-landscape {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 131px;
-  margin: 5px 0 -13px 10px;
+  width: 100%;
 }
 
 .card-landscape__img {
   display: flex;
-  flex-direction: column;
-  width: 38%;
-  height: 133px;
-  border-radius: 15px 0 0 15px;
+  flex-wrap: wrap;
+  width: 43%;
+  height: 142px;
+  border-radius: 20px 0 0 20px;
   object-fit: cover;
+  padding: 5px;
 }
 
 .card-landscape__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 114px;
-  width: 177px;
-  padding: 4px 6px 0 0;
+  justify-content: space-between;
+  margin: 10px 0 10px 10px;
 }
 
 /************************** ACTIVITIES SECTION ******************************/
@@ -761,16 +753,13 @@ main {
 .activities__cards {
   display: flex;
   justify-content: space-between;
-  height: fit-content;
 }
 
 .card-activities {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 447px;
-  width: 301px;
-  margin: 0 0 0 15px;
+  width: 23%;
 }
 
 .card-activities__name {
@@ -792,11 +781,6 @@ main {
 
 .activity-card-3__img {
   height: 110px;
-}
-
-.activity-card-2,
-.activity-card-5 {
-  margin-bottom: 15px;
 }
 
 .activity-card-5__img,
@@ -937,22 +921,24 @@ main {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  width: 79.6%;
-  padding: 44px 0px 0px 51px;
-  height: 200px;
+  width: 100%;
+}
+
+.list-container {
+  width: 100%;
+  margin: 40px 0;
 }
 
 .footer-list {
   line-height: 30px;
   margin: 0;
   padding: 0;
-  width: 240px;
 }
 
 .footer-list__title {
-  margin-bottom: 10px;
   font-weight: 600;
   font-size: 18px;
+  margin: 0 0 10px 0;
 }
 
 .footer-link {
@@ -981,11 +967,25 @@ main {
 /************* TABLET **********/
 
 @media screen and (max-width: 992px) {
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .section-research {
+    margin: 30px auto 0;
+    width: 95%;
+  }
+
   .accomodations {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap-reverse;
-    margin-top: 39px;
+    margin-top: 40px;
   }
 
   .accomodations-background {
@@ -993,7 +993,12 @@ main {
   }
 
   .right-part {
-    width: 90%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .right-part__cards {
+    width: 100%;
   }
 
   .card-landscape {
@@ -1005,36 +1010,41 @@ main {
   .card-landscape__img {
     display: flex;
     flex-direction: column;
-    width: 100%;
     object-fit: cover;
   }
 
-  .card-landscape__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 114px;
-    width: 100%;
-    margin-left: 40px;
-  }
-
   .left-part {
-    width: 90%;
+    width: 100%;
+    background: white;
   }
-
-  .left-part__cards {
-    justify-content: center;
+  .card-portrait {
+    width: 48%;
   }
 
   .footer-container {
     display: flex;
     justify-content: space-evenly;
     align-items: start;
-    width: 100%;
+    width: 90%;
+  }
+  .activities__title {
+    font-size: 22px;
+    width: 95%;
+    margin: 35px auto 20px;
+  }
+  .activities__cards {
+    justify-content: space-evenly;
   }
 
   .footer-list {
     padding: 0;
+  }
+
+  .list-container {
+    margin: 20px 0;
+  }
+  .list-item {
+    margin-bottom: 10px;
   }
 
   .footer-list__title {
@@ -1049,16 +1059,24 @@ main {
 /************* MOBILE **********/
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
   .header {
     flex-direction: column;
     padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .header__link {
+    width: 80px;
+    margin: 0 auto 23px;
   }
 
   .header__logo {
-    background: url('../images/logo/Booki@3x.png') center/cover;
-    height: 45px;
-    width: 119px;
-    margin: 24px auto 20px;
+    height: 50px;
+    width: 110px;
   }
 
   .nav {
@@ -1095,10 +1113,6 @@ main {
     padding: 0;
   }
 
-  .section-research {
-    margin: 53px 25px 0 25px;
-  }
-
   .section-research__heading {
     font-size: 22px;
     font-weight: 700;
@@ -1107,8 +1121,8 @@ main {
 
   .searchbar {
     position: relative;
-    width: 100%;
     justify-content: flex-start;
+    width: 92%;
   }
 
   .searchbar:after {
@@ -1126,7 +1140,7 @@ main {
   }
 
   .searchbar__field {
-    width: 80%;
+    width: 84%;
   }
 
   .searchbar__submit {
@@ -1169,7 +1183,7 @@ main {
 
   .info {
     width: 100%;
-    align-items: flex-start;
+    margin-bottom: 10px;
   }
 
   .info__text {
@@ -1204,10 +1218,19 @@ main {
     width: 100%;
   }
 
+  .right-part__title {
+    width: 95%;
+    margin: 12px auto 26px;
+  }
+
+  .right-part__title::after {
+    right: 0px;
+  }
+
   .card-landscape {
     justify-content: flex-start;
     width: 90%;
-    margin: 5px auto;
+    margin: 0 auto 10px;
   }
 
   .card-landscape__img {
@@ -1226,11 +1249,23 @@ main {
   .left-part {
     width: 100%;
   }
+  .left-part__title {
+    font-size: 22px;
+    margin: 12px 10px 26px 10px;
+  }
+  .left-part__cards {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .left-part__more {
+    margin: 8px auto 0;
+    width: 95%;
+  }
 
   .card-portrait {
-    height: 190px;
-    width: 90%;
-    margin: 5px 11px 13px 11px;
+    width: 100%;
+    margin: 0px auto 15px;
   }
 
   .activities__cards {
@@ -1242,22 +1277,29 @@ main {
   }
 
   .card-activities {
-    height: 200px;
     width: 90%;
     margin: 10px auto;
   }
 
+  .activity-card-2,
+  .activity-card-5 {
+    margin-bottom: 20px;
+  }
   .activity-card-all__img {
     height: 140px;
     width: 100%;
   }
 
-  .card-activities-duo {
-    height: 420px;
+  .footer {
+    margin-top: 40px;
   }
 
-  .footer {
-    margin-top: 240px;
+  .list-container {
+    text-align: unset;
+  }
+
+  .footer-list__title {
+    margin: 0 0 7px 0;
   }
 
   .footer-container {
@@ -1265,7 +1307,6 @@ main {
     flex-direction: column;
     margin: 0 auto;
     width: 85%;
-    height: 430px;
     padding: 0px 0px 40px 0px;
   }
 }
