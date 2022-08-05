@@ -374,7 +374,7 @@ body {
 }
 
 .header__logo {
-  background: url('/images/logo/Booki.png') center/cover;
+  background: url('../images/logo/Booki.png') center/cover;
   height: 40px;
   width: 104px;
   margin: 26px 0px 0px 31px;
@@ -1055,7 +1055,7 @@ main {
   }
 
   .header__logo {
-    background: url('/images/logo/Booki@3x.png') center/cover;
+    background: url('../images/logo/Booki@3x.png') center/cover;
     height: 45px;
     width: 119px;
     margin: 24px auto 20px;
